@@ -58,11 +58,15 @@ A diferencia del tipo anterior, se deben desarrollar siguiendo una metodología 
 ### Lenguajes Algorítmicos
 Definen la manera en cómo nos comuniquemos mediante algoritmos, con el fin de que la máquina nos entienda.
 Para resolver algoritmos, existen 4 técnicas diferentes para describir los pasos de un algoritmo de una manera más detallada y estructurada.
+
 #### **LENGUAJE NATURAL**
+
 Se utiliza un vocabulario cotidiano, para describir los problemas de una manera más simple.
+
 #### **LENGUAJE DE DIAGRAMA DE FLUJO**
 Algoritmos representados mediante símbolos, que facilitan el entendimiento de la solución.
 Al ser un proceso gráfico, ayuda más a entender y realizar un seguimiento a la problemática.
+
 #### **LENGUAJE DE PSEUDOCODIGO**
 Cumplen la misma función que los diagramas de flujo, pero son orientados a definir la solución de un problema de una manera más precisa (ya no con gráficos), buscando definiciones formales.
 Son más estructurados y definidos.
@@ -78,7 +82,7 @@ Cada lenguaje de programación define cómo se termina una línea de código (o 
 Algunos lenguajes lo requieren (Java, Javascript, C#), otros no (Python).
 Todos los algoritmos de pseudocódigo los finalizaremos con ese caracter de cierre.
 
-*Reglas básicas del Pseudocódigo:
+* Reglas básicas del Pseudocódigo:
 - Se debe delimitar entre un INICIO y FINAL
 - Toda la lógica debe estar entre INICIO y FINAL
 - Las variables que utilicemos en el algoritmo deben haber sido declaradas previamente
@@ -86,3 +90,15 @@ Todos los algoritmos de pseudocódigo los finalizaremos con ese caracter de cier
 
 #### **LENGUAJE DE PROGRAMACION**
 
+* **VARIABLE**
+- Contenedor de memoria que almacena valores y su contenido puede variar.
+(Las Constantes se mantienen siempre tal cual como se definieron).
+- Identificador de la variable: siempre llevará un nombre que la identifique (dato y posición en memoria).
+- Tipo de dato de las variables: numérico, carácter o string, bool, etc.
+
+* *Buenas prácticas para definir VAR*
+- 1er carácter sea alfabético (a...z, o $ o _),
+- Luego del 1er carácter, pueden llevar alfanuméricos,
+- Utilizar camelCase,
+- Los identificadores no pueden ser palabras reservadas del lenguaje,
+- Los identificadores no pueden tener espacios, signos, tildes o caracteres diferentes a los mencionados.
