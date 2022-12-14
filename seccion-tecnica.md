@@ -102,3 +102,14 @@ Todos los algoritmos de pseudocódigo los finalizaremos con ese caracter de cier
 - Utilizar camelCase,
 - Los identificadores no pueden ser palabras reservadas del lenguaje,
 - Los identificadores no pueden tener espacios, signos, tildes o caracteres diferentes a los mencionados.
+
+### PRECEDENCIA DE OPERADORES
+
+Primero se resuelven los operadores de mayor precedencia, en caso de tener igual precedencia se resolverán de izquierda a derecha.
+
+1 - Operador de agrupación ()
+2 - Operadores de * / % (producto, división y módulo o residuo)
+3 - Operadores de + y -
+
+### PRUEBA DE ALGORITMOS
+
