@@ -111,5 +111,74 @@ Primero se resuelven los operadores de mayor precedencia, en caso de tener igual
 2 - Operadores de * / % (producto, división y módulo o residuo)
 3 - Operadores de + y -
 
-### PRUEBA DE ALGORITMOS
+### PRUEBA DE ESCRITORIO
 
+Seguimiento paso a paso de la ejecución del algoritmo.
+Mientras que el algoritmo avanza, se hacen uso de variables e instrucciones.
+La prueba de escritorio valida este proceso para verificar si el algoritmo cumple con el funcionamiento deseado.
+
+# SOFTWARE
+
+Conjunto de programas de cómputo, procedimientos, reglas, documentación y datos asociados, que forman parte de las operaciones de un sistema de computación. (Estándar 729 IEEE)
+
+El Software no sólo es el código fuente, también existe el conjunto de elementos antes mencionados.
+
+## Categorías
+* **Software de Aplicación**
+(Hotelero, bancario, clínica, etc.)
+Agrupa conjunto de herramientas de software que dan soluciones en específico (paquetes de office, programas de diseño asistido, procesadores de texto, editores, hojas de cálculo, etc.)
+
+* **Software de Sistema**
+Conjunto de herramientas de software que dan soluciones al sistema operativo (softwares de utilidades, controladores, etc.)
+
+* **Software de Programación**
+Entornos de desarrollo integrados (IDE), que a su vez son softwares desarrollados para crear software (compiladores, editores de texto, intérpretes, etc.)
+
+Para ello, hay que cumplir una serie de etapas: *Ciclo de vida del software*:
+* Planteamiento del problema
+* Análisis
+* Diseño
+* Codificación
+* Pruebas (Depuración = resolver problemas encontrados)
+* Entrega o Salida a Producción (Mantenimiento = soporte a la solución de software brindada)
+
+# RESOLUCION DE PROBLEMAS CON ALGORITMOS
+
+### DEFINICION DEL PROBLEMA
+Generalmente está dada por el enunciado del problema (debe ser claro y completo).
+Es importante saber qué es lo que se desea obtener al final del proceso (FIN/SALIDA).
+
+## ANALISIS DE LOS DATOS
+Intepretar lo que se debe hacer y definir lo que neccesitamos para hacerlo.
+Una vez definido el problema, se debe analizar:
+* Los resultados esperados
+* Los datos de entrada a utilizar
+* Herramientas para manipular los datos y obtener un resultado
+Lo recomendable es escribir las posibles salidas o resultados esperados de la solución que se pretende plantear.
+
+## DISEÑO DE LA SOLUCION
+Definir los pasos a realizar mediante un algoritmo que resuelva el problema (pseudocódigo y diagrama de flujo).
+
+## CODIFICACION
+Obtener un programa definitivo que sea comprensible por la máquina. 
+Se obtiene la solución en un lenguaje de programación. Incluye la etapa de compilación (proceso de traducir el lenguaje de programación al lenguaje de máquina).
+
+## PRUEBA Y DEPURACION
+Ya obtenido el programa, es sometido a pruebas para ver si resuelve o no el problema planteado.
+Generalmente se inician los "tests" ingresando datos válidos (prueba feliz), inválidos e incongruentes, observando cómo actúa en cada caso.
+La Depuración consiste en detectar errores y corregirlos si existen.
+Si no hay errores, se puede ver la depuración como una etapa de *refinamiento*, donde se ajustan detalles para optimizar el programa.
+Buscar un código más reducido y a la vez más eficiente.
+
+## DOCUMENTACION
+Se registra el proceso realizado para llegar a la solución.
+Se debe documentar el proceso y el paso a paso desde el inicio. Puede ser mediante:
+* Comentarios en el código,
+* Documentos de especificación,
+* Manuales de uso y configuración (pasos a seguir para utilizar el programa), etc.
+Lo ideal es iniciar la etapa de codificación con comentarios de código.
+
+## MANTENIMIENTO
+Actualizaciones que deben realizarse al programa cuando sea necesario. 
+Al terminar el programa, éste deberá ser susceptible de ser modificado para nuevas actualizaciones.
+Los cambios y actualizaciones deben reflejarse en la documentación.
