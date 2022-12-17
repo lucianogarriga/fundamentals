@@ -31,18 +31,18 @@ A != 5 TRUE
  
 Permiten la combinación de condiciones para formar una expresión lógica. 
 
-**!** Negación (NO) 
-**&&** Conjunción (Y) 
+**!** Negación (NO)   
+**&&** Conjunción (Y)  
 **||** Disyunción (O)  
 
 La forma de utilizar e interpretar los operadores lógicos:
 
 Operando 1 **OPERADOR LOGICO** Operando 2
 
-**!=F** TRUE 
+**!=F** TRUE  
 **!=V** FALSE  
 
-**F&&V = F**
+**F&&V = F**  
 **F||V = V**
 
 # ESTRUCTURAS DE CONTROL
