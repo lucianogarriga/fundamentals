@@ -43,10 +43,10 @@ Permiten ejecutar determinada acción cuando se cumple una condición, pero en c
 //   
  
 **INICIO**   
-    entero edad;   
-    lea edad;    
 
- if (edad >= 18)  
+    entero edad;   
+    lea edad;
+    if (edad >= 18)  
     {  
         imprima "Eres mayor de edad";  
     }  
@@ -60,7 +60,7 @@ Permiten ejecutar determinada acción cuando se cumple una condición, pero en c
 
 ## CONDICIONES MULTIPLES (IF - IF ELSE - ELSE) 
 
-Casos en los que después de tomar una decisión, se requiera seguir un posible camino donde se deban implementar nuevas condiciones.
+Casos en los que después de tomar una decisión, se requiera seguir un posible camino donde se deban implementar nuevas condiciones.  
 Para esto se aplican las condicionales, donde en cada bloque IF o ELSE pueden existir nuevas condiciones, y dentro de éstas nuevos procesos, y así sucesivamente.  
  
 (Condiciones dentro de bloques de condiciones IF o de bloques ELSE)
@@ -69,17 +69,20 @@ Para esto se aplican las condicionales, donde en cada bloque IF o ELSE pueden ex
 
 EJEMPLO = Algoritmo que determine si un número es +, - o cero.
 
-INICIO 
-    entero num;
-    lea num;
-    **if**(num <0) {
-        imprima "Negativo";
-    } **else** {
-        **if** (num > 0) {
-            imprima "Positivo";
-        } **else** {
-            imprima "Cero";
-        }
+
+INICIO   
+
+    entero num;  
+    lea num;  
+
+    **if**(num <0) {  
+        imprima "Negativo";  
+    } **else** {  
+        **if** (num > 0) {  
+            imprima "Positivo";  
+        } **else** {  
+            imprima "Cero";  
+        }  
     }
 FIN   
 
