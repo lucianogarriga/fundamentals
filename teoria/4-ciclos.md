@@ -50,4 +50,52 @@ INICIO
     }
     while(i<=10);
 
-FIN
+FIN  
+ 
+## WHILE
+
+Este cilco primero realiza una validación, y dependiendo del resultado (T/F) determina si ingresa al ciclo o no. Repite hasta que la condición falle. 
+
+INICIO 
+
+    entero i=1;
+    
+    while(i<=10){  
+    imprima "i";  
+    i++;  
+    }
+
+FIN  
+ 
+## FOR
+
+Es la abreviación de los 2 ciclos anteriores.
+Adicional a la condición, también incluye la inicialización y el incremento.
+
+INICIO 
+
+    for(inicialización, condición, incremento)
+    {
+      Accion 1;
+      Accion 2;
+      ...
+    }
+
+FIN   
+
+Una vez inicializado (se ejecuta 1 sola vez), luego se incrementa, se pregunta la condición, y se ejecutan las acciones. 
+Luego se incrementa, se pregunta y segun se cumpla o no se sigue ejecutando.  
+El ciclo FOR es como el ciclo MIENTRAS, primero pregunta y luego ejecuta.
+
+ **PSEUDOCODIGO**
+
+ INICIO 
+
+    entero i;
+
+    for(i=1; i<10; i++) 
+    {
+      imprima "i";
+    }
+
+FIN   
