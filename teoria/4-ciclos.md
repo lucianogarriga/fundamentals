@@ -99,3 +99,9 @@ El ciclo FOR es como el ciclo MIENTRAS, primero pregunta y luego ejecuta.
     }
 
 FIN   
+
+# COMPORTAMIENTO DE LOS CICLOS
+
+**DO-WHILE** Lógica Ejecución-Condición
+**WHILE** Lógica Condición-Ejecución
+**FOR** Lógica Condición-Ejecución
