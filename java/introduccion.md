@@ -187,14 +187,40 @@ Para imprimir un mensaje **por pantalla**, se utiliza el comando **JOptionPane.s
 Un comando similar al **prompt** de Javascript, es el siguiente:
 Primero declaramos el tipo y la variable, luego el comando:
  
- 	String nombre=JOptionPane.showInputDialog("Ingrese su nombre");
+ 	    String nombre=JOptionPane.showInputDialog("Ingrese su nombre");
+
+En el caso de los tipos de dato numéricos, se debe agregar los comandos **Integer** y **parseInt**, previo a los demás comandos; por lo que quedaría así:
+
+		int edad=Integer.parseInt(JOptionPane.showInputDialog("Ingrese su edad"));
+
 		
 Para imprimirlo por consola, el comando es:
 
-	System.out.println(nombre);
+	    System.out.println(nombre);
 
 Y para imprimirlo por pantalla, el comando es:
 
-    JOptionPane.showMessageDialog(null, "El nombre ingresado es "+ nombre); 
+        JOptionPane.showMessageDialog(null, "El nombre ingresado es "+ nombre); 
 
-   
+## TIPOS DE DATOS EN JAVA
+
+Java es fuertemente tipado. Maneja los tipos de datos de manera muy estricta.
+En Javascript no señalamos el tipo de dato acompañando a la variable. La variable toma el tipo de dato dependiendo del valor que le asignemos. 
+En java debemos señalar el tipo de dato que vamos a almacenar. 
+
+Existen 8 variables **primitivas** como son:
+
+* byte (números enteros hasta 127)
+* short
+* int (generalmente para guardar números enteros se utiliza int)
+* long 
+* float (para almacenar números decimales)
+* double (para decimales)
+* char (para almacenar caracteres - 1 letra o 1 números)
+* boolean (true o false)
+
+Luego existen variables **de referencia** que serían los **objetos**, donde el tipo de dato representa una **clase**:  
+* String (cadena de caracteres)
+
+El String se diferencia de los otros, ya que inicia con mayúscula. Es del mismo tipo que la clase principal. 
+
