@@ -1,0 +1,4 @@
+# FUNDAMENTOS DE PROGRAMACION - ALGORITMOS JAVA Y JAVASCRIPT
+
+## LENGUAJE DE MÁQUINA 
+Las instrucciones son cadenas binarias de 0 y 1.
