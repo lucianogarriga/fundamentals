@@ -427,5 +427,149 @@ public class EjercicioCicloFor {
 
 Dependiendo del tipo de semilla que tiene que sembrar, se deberá desplegar un menú y en base a ello se realizarán los cálculos. 
 
-> costoSemillas = numeroSemillas x valorSemilla 
+costoSemillas = numeroSemillas x valorSemilla 
 
+> ### RESOLUCION EJERCICIO INTEGRADOR 
+
+```java
+
+package bonus;
+
+import javax.swing.JOptionPane;
+
+public class bonus {
+	
+	public static void main(String[]args) {
+		String menuVerdura,menuTomate,menuPapa,menuCebolla;
+		int codigoVerdura, codigoTipo, valorSemilla=0, numeroSemilla, costoSemilla;
+		String verdura="", tipo="", resp="";
+		boolean error=false;
+		
+		do{
+			//
+			error=false;
+			
+			menuVerdura="MENU VERDURA\n\n";
+			menuVerdura+="1. Tomate\n";
+			menuVerdura+="2. Repollo\n";
+			menuVerdura+="3. Papa\n";
+			menuVerdura+="4. Cebolla\n\n";
+			
+			menuTomate="TIPO TOMATE\n\n";
+			menuTomate+="1. Chonto\n";
+			menuTomate+="2. Ensalada\n\n";
+			
+			menuPapa="TIPO PAPA\n\n";
+			menuPapa+="1. Criolla\n";
+			menuPapa+="2. Pastusa\n";
+			menuPapa+="3. Salentusa\n\n";
+			
+			menuCebolla="TIPO CEBOLLA\n\n";
+			menuCebolla+="1. Larga\n";
+			menuCebolla+="2. De huevo\n\n";
+			
+			codigoVerdura=Integer.parseInt(JOptionPane.
+					showInputDialog(menuVerdura+" Ingrese el código de la verdura"));
+		
+			switch (codigoVerdura) {
+			case 1: verdura="Tomate";
+			
+				codigoTipo=Integer.parseInt(JOptionPane.
+				showInputDialog(menuTomate+" Ingrese el tipo de tomate"));
+				
+				switch (codigoTipo) {
+				case 1: tipo="Chonto";
+						valorSemilla=15;	
+						System.out.println(tipo + " es el tipo elegido y cada semilla vale " + valorSemilla);
+					break;
+				case 2: tipo="Ensalada";
+						valorSemilla=20;
+						System.out.println(tipo + " es el tipo elegido y cada semilla vale " + valorSemilla);
+				break; 
+				default: error=true; 
+					System.out.println("El tipo ingresado no existe");
+					break;
+				}
+			
+				break;
+			case 2: verdura="Repollo";
+					tipo="Normal";
+					valorSemilla=10;
+					System.out.println(tipo + " es el tipo elegido y cada semilla vale " + valorSemilla);	
+				break;
+			case 3: verdura="Papa";
+			
+				codigoTipo=Integer.parseInt(JOptionPane.
+				showInputDialog(menuPapa+" Ingrese el tipo de papa"));
+				
+				switch (codigoTipo) {
+				case 1: tipo="Criolla";
+						valorSemilla=8;
+						System.out.println(tipo + " es el tipo elegido y cada semilla vale " + valorSemilla);	
+					break;
+				case 2:tipo="Pastusa";
+						valorSemilla=9;
+						System.out.println(tipo + " es el tipo elegido y cada semilla vale " + valorSemilla);
+					break;
+				case 3:tipo="Salentuna";
+						valorSemilla=11;
+						System.out.println(tipo + " es el tipo elegido y cada semilla vale " + valorSemilla);	
+					break;
+				default: error=true; 
+				System.out.println("El tipo ingresado no existe");
+					break;
+				}
+			
+				break;
+			case 4: verdura="Cebolla";
+			
+				codigoTipo=Integer.parseInt(JOptionPane.
+				showInputDialog(menuCebolla+" Ingrese el tipo de cebolla"));
+				
+				switch (codigoTipo) {
+				case 1: tipo="Larga";
+						valorSemilla=15;
+						System.out.println(tipo + " es el tipo elegido y cada semilla vale " + valorSemilla);
+					break;
+				case 2: tipo="De huevo";
+						valorSemilla=13;
+						System.out.println(tipo + " es el tipo elegido y cada semilla vale " + valorSemilla);				
+					break;
+				default: error=true; 
+				 System.out.println("El tipo ingresado no existe");
+					break;
+				}
+			
+				break; 
+
+			default: error=true; 
+			 System.out.println("El tipo de verdura no existe");
+				break;
+			}
+			
+			if (error==false) {
+				
+				numeroSemilla=Integer.parseInt(JOptionPane.
+						showInputDialog("Ingrese la cantidad de semillas"));
+				
+				costoSemilla=numeroSemilla*valorSemilla;
+				
+				System.out.println("Verdura: " + verdura + " de tipo: " + tipo);
+				System.out.println("Cantidad de semillas: " + numeroSemilla);
+				System.out.println("Costo total de semillas: " + costoSemilla);	
+				
+			} else {
+				System.out.println("Error en el ingreso de datos");
+			}
+						
+			//
+			System.out.println();
+			System.out.println("**********************");
+			System.out.println();
+			
+			resp=JOptionPane.showInputDialog("Ingrese 'si' si desea continuar");
+		} while(resp.equalsIgnoreCase("si"));
+		
+	}
+}
+```
