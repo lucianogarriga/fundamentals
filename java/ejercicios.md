@@ -154,13 +154,6 @@ import javax.swing.JOptionPane;
 
 public class EjercicioCondicionalSimple {
 
-	/*
-	 * Una tienda realiza descuento del 50% en compras + o = a $100.000.
-	 * Hacer un algoritmo que permita validar cuando se den las condiciones
-	 *  para aplicar un descuento. En caso que el descuento sea valido,
-	 *  se informe al usuario indicando el valor descontado.
-	 */
-	
 	public static void main (String[] args) {
 		
 		double valorCompra=0,descuento=0,valorFinal=0;
@@ -168,6 +161,10 @@ public class EjercicioCondicionalSimple {
 		
 		valorCompra=Double.parseDouble(JOptionPane.showInputDialog(
 				"Ingrese valor de la compra"));
+
+        //También podría ser declarado como un número entero
+        //int valorCompra=0;
+        //valorCompra=Integer.parseInt(JOptionPane.showInputDialog(""));
 		
 		if(valorCompra >= 100000) {
 			descuento=valorCompra*0.5;
@@ -184,4 +181,251 @@ public class EjercicioCondicionalSimple {
 	}
 }
 ```
+
+## **EJERCICIO 4 - ESTRUCTURA CONDICIONAL DOBLE**
+### Una tienda realiza descuento del 50% en compras + o = a $100.000, y un descuento del 10% en compras menores a dicho monto. Hacer un algoritmo que permita validar cuando se den las condiciones para aplicar un descuento. En caso que el descuento sea valido, que informe al usuario indicando el valor descontado.
+<br> 
+
+### **PSEUDOCODIGO** 
+
+INICIO  
+
+    numerico valorCompra, descuento, valorFinal;  
+    imprima "Ingrese el valor de la compra";  
+    lea valorCompra;  
+    descuento = 0;  
+    valorFinal = valorCompra;  
+  
+    if(valorCompra >= 100000){  
+        descuento = valorCompra*0.5;  
+        valorFinal = valorCompra - descuento;
+        imprima "Se aplico un dto del 50% equivalente a: + descuento";
+    }  else {
+        descuento = valorCompra*0.1;
+        valorFinal = valorCompra - descuento;
+        imprima "Se aplico un dto del 10% equivalente a: + descuento";
+    }
+
+    imprima "El valor final es de " + valorFinal;  
+
+FINAL  
+
+<br>
+
+> ### **RESOLUCION EJERCICIO 4 EN ARCHIVO . JAVA**
+<br>
+
+```java
+package condiciones;
+
+import javax.swing.JOptionPane;
+
+public class EjercicioCondicionalDoble {
+
+	public static void main (String[] args) {
+		
+		double valorCompra=0,descuento=0,valorFinal=0;
+		String mensajeDto="",mensaje="";
+		
+		valorCompra=Double.parseDouble(JOptionPane.showInputDialog(
+				"Ingrese valor de la compra"));
+		
+		if(valorCompra >= 100000) {
+			descuento=valorCompra*0.5;
+			valorFinal=valorCompra-descuento;
+			mensajeDto="Se realizó un descuento del 50% "
+					+ "equivalente a " + descuento;
+			System.out.println(mensajeDto);
+			JOptionPane.showMessageDialog(null,mensajeDto);
+		} else {
+			descuento=valorCompra*0.1;
+			valorFinal=valorCompra-descuento;
+			mensajeDto="Se realizó un descuento del 10% "
+					+ "equivalente a " + descuento;
+			System.out.println(mensajeDto);
+			JOptionPane.showMessageDialog(null,mensajeDto);
+		}
+		
+		mensaje="El valor total a pagar es: " + valorFinal;
+		System.out.println(mensaje);
+		JOptionPane.showMessageDialog(null,mensaje);
+	}
+}
+```
+
+## **EJERCICIO 5 - ESTRUCTURA CONDICIONAL MULTIPLE**
+### Algoritmo que solicite un codigo y que imprima el dia correspondiente
+### 1. Lunes 2. Martes 3. Miercoles 4. Jueves 5. Viernes 6. Sabado 7. Domingo
+<br> 
+
+```java
+
+package condiciones;
+
+import javax.swing.JOptionPane;
+
+public class EjercicioCondMultiple {
+
+	public static void main(String[]args) {
+		int codigo=0;
+		String mensaje="MENU\n\n";
+		
+		mensaje+="1. Lunes\n";
+		mensaje+="2. Martes\n";
+		mensaje+="3. Miercoles\n";
+		mensaje+="4. Jueves\n";
+		mensaje+="5. Viernes\n";
+		mensaje+="6. Sabado\n";
+		mensaje+="7. Domingo\n";
+		
+		codigo=Integer.parseInt(JOptionPane.showInputDialog(mensaje+"\n Ingrese el código"));
+	
+		switch (codigo) {
+		case 1: JOptionPane.showMessageDialog(null,"El día es Lunes");
+			break;
+		case 2: JOptionPane.showMessageDialog(null,"El día es Martes");
+			break;
+		case 3: JOptionPane.showMessageDialog(null,"El día es Miercoles");
+			break;
+		case 4: JOptionPane.showMessageDialog(null,"El día es Jueves");
+			break;
+		case 5: JOptionPane.showMessageDialog(null,"El día es Viernes");
+			break;
+		case 6: JOptionPane.showMessageDialog(null,"El día es Sabado");
+			break;
+		case 7: JOptionPane.showMessageDialog(null,"El día es Domingo");
+			break;
+
+		default: JOptionPane.showMessageDialog(null,"El código no existe");
+			break;
+		}
+		
+	}
+	
+}
+```
+
+## **EJERCICIO 6 - CICLO FOR**
+
+```java
+
+package condiciones;
+
+import javax.swing.JOptionPane;
+
+public class EjercicioCicloFor {
+
+	public static void main(String[]args) {
+		int i, suma = 0, cant=0;
+
+        cant=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad"));
+
+        for (i=0; i<=cant;i++){
+            suma=suma+i;
+        }
+
+        System.out.prinln("La suma de los " +cant+" primeros numeros es: " +suma);
+	}
+	
+}
+```
+
+## **EJERCICIO 7 - CICLOS DO-WHILE ANIDADOS**
+
+### Algoritmo que imprima la suma de los 10 primeros numeros, usando el ciclo do-while, y lo repita la cantidad de veces que el usuario desee.
+<br>
+
+```java
+    package condiciones;
+
+    import javax.swing.JOptionPane;
+
+    public class EjercicioCicloAnidado1 {
+
+        public static void main(String[]args) {
+            int i=0,j=0, suma = 0, cant=0, n=0;
+
+            n=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de veces a repetir"));
+
+            do{
+                //
+                JOptionPane.showInputDialog(null,"Inicia la sumatoria");
+                cant=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de numeros a sumar"));
+                //cada vez que empecemos nuestro algoritmo, hay que reiniciar las variables
+                i=0;
+                suma=0;
+                do{
+                    suma=suma+i;
+                    i++;
+                } while(i<=cant);
+
+                System.out.prinln("La suma de los " +cant+" primeros numeros es: " +suma);
+                //
+
+                j++;
+            }while(j<n);
+
+
+        }
+        
+    }
+```
+
+## **EJERCICIO 8 - CICLOS WHILE ANIDADOS**
+
+### Algoritmo que imprima la suma de los 10 primeros numeros, usando el ciclo while, y lo repita la cantidad de veces que el usuario desee.
+<br>
+
+```java
+    package condiciones;
+
+    import javax.swing.JOptionPane;
+
+    public class EjercicioWhileAnidado {
+
+        public static void main (String[]args) {
+            int i, suma, cant=0;
+            String resp="si";
+            
+            do {
+                //
+                cant=Integer.parseInt(JOptionPane.showInputDialog("Ingrese "
+                        + "la cantidad"));
+                i=0;
+                suma=0;
+                while(i<=cant) {
+                    suma=suma+i;
+                    i++;
+                }
+                System.out.println("La suma de los "+cant+" primeros numeros es "+suma);
+                //
+                resp=JOptionPane.showInputDialog("Ingrese si, si desea continuar");
+                
+            } while (resp.equals("si"));
+            //Para comparar palabras que ingrese el usuario.
+            //resp no solo es una variable, sino que a la vez es un Objeto
+            //por ende, no se puede hacer la comparación == como se hace
+            //con variables normales, porque es un Objeto también.
+            
+        }
+        
+    }
+```
+## **EJERCICIO INTEGRADOR**
+
+### Un agricultor desea saber el costo de producción de un cultivo de acuerdo a la semilla, conociendo el numero de semillas que utilizara y el costo de cada una. 
+|Verdura | Tipo | Valor x semilla |
+|----------|--------------|---------|
+|Tomate|Chonto|15|
+||Ensalada|20| 
+|Repollo||10|
+|Papa| Criolla |8|
+||Pastusa|9|
+||Salentuna|11|
+|Cebolla|Larga|15|
+||De huevo|13|    
+
+Dependiendo del tipo de semilla que tiene que sembrar, se deberá desplegar un menú y en base a ello se realizarán los cálculos. 
+
+> costoSemillas = numeroSemillas x valorSemilla 
 
