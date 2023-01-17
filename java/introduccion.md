@@ -7,8 +7,10 @@ Se puede trabajar desde windows, mac, linux, etc.
 - Es un Lenguaje Interpretado   
 El intérprete convierte el código java a código de máquina (JVM - Java Virtual Machine)
 
-### **TECNOLOGIAS JAVA**  '
+<br> 
 
+### **TECNOLOGIAS JAVA**   
+<br> 
 
 **JME (JAVA MICRO EDITION)**   
 Aplicaciones móviles.  
@@ -16,6 +18,8 @@ Aplicaciones móviles.
 Aplicaciones de escritorio (stand alone), applets, etc.  
 **JEE (JAVA ENTERPRISE EDITION)**  
 Aplicaciones empresariales (web), entorno cliente-servidor, software distribuido,etc. 
+
+<br>
 
 ### **JDK (JAVA DEVELOPMENT KIT)**
 Es el software requerido para la creación de programas Java.  
@@ -57,7 +61,8 @@ interface ActionListener*
 
 El nombre de la clase debe coincidir con el nombre del archivo **.java**
 
-Ejemplo:   
+Ejemplo:    
+
 archivo => ClasePrincipal.java 
 
     public class ClasePrincipal {
@@ -116,6 +121,7 @@ Ejemplo:
 
 Para iniciar un proyecto **.java**, se comienza de la siguiente manera:
 
+```java
 public class Principal {
 
     public static void main (String arg[]){
@@ -123,6 +129,7 @@ public class Principal {
     }
 
 } 
+```
 
 Obligatoriamente debe iniciar de esa manera para que pueda leer nuestros algoritmos.  
 El nombre del archivo (en este caso **Principal.java**) debe coincidir y ser igual al nombre de la class (**Principal**).  
@@ -142,6 +149,7 @@ Como hemos visto antes, primero se declara el tipo de dato y luego el nombre de 
 **int**: número entero
 **double**: número decimal
 
+```java
 import javax.swing.JOptionPane;
 
 public class Aplication {
@@ -174,6 +182,7 @@ public class Aplication {
 		 
 	}
 }
+```
 
 El comando para imprimir un mensaje por consola es:
 

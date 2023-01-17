@@ -12,13 +12,13 @@ Se evalúa una condición y depende del resultado se define la acción a realiza
 ## CONDICIONES SIMPLES (IF)
 Permite ejecutar 1 acción cuando se cumple 1 condición. 
  
-...
- if (condición)  
-    {  
-        Acción 1,  
-        Acción 2...  
-    }  
-...
+```
+    if (condición)  
+        {  
+            Acción 1,  
+            Acción 2...  
+        }  
+```
  
  *Se muestra lo que está dentro del bloque de las {}, si la condición es V*
 
@@ -29,7 +29,7 @@ Permiten ejecutar determinada acción cuando se cumple una condición, pero en c
  Condición = TRUE ==> Ejecuta acciones dentro del **if**  
  Condición = FALSE ==> Ejecuta accionesd entro del **else**
 
-...  
+```  
  if (condición)  
     {  
         Acción 1;  
@@ -37,10 +37,7 @@ Permiten ejecutar determinada acción cuando se cumple una condición, pero en c
     else {   
         Acción 2;  
     }  
-...    
-
-//   
-//   
+```       
  
 **INICIO**   
 
@@ -56,7 +53,8 @@ Permiten ejecutar determinada acción cuando se cumple una condición, pero en c
 
 **FIN** 
 
-#### **NUNCA SE EJECUTAN AMBOS CAMINOS. O SE EJECUTA UNO, O EL OTRO**  
+#### **NUNCA SE EJECUTAN AMBOS CAMINOS. O SE EJECUTA UNO, O EL OTRO** 
+<br> 
 
 ## CONDICIONES MULTIPLES (IF - IF ELSE - ELSE) 
 *  *Con condiciones anidadas*
@@ -72,19 +70,20 @@ EJEMPLO = Algoritmo que determine si un número es +, - o cero.
 
 
 INICIO   
-
+```
     entero num;  
     lea num;  
 
-    **if**(num <0) {  
+    if (num <0) {  
         imprima "Negativo";  
-    } **else** {  
-        **if** (num > 0) {  
+    } else {  
+        if (num > 0) {  
             imprima "Positivo";  
-        } **else** {  
+        } else {  
             imprima "Cero";  
         }  
     }
+```
 FIN   
  
 
@@ -97,7 +96,7 @@ FIN
  La condición se evalúa, y depende de su contenido se elije el camino a seguir con las respectivas acciones.   
 
 INICIO  
-
+```
 SWITCH (condicion) 
   
     {  
@@ -112,7 +111,7 @@ SWITCH (condicion)
     }
 
 FIN 
- 
+```
   
 Ejemplo: algoritmo que permita leer un número e imprimir el nombre correspondiente.  
 
