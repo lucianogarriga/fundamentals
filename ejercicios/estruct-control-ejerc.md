@@ -65,10 +65,10 @@ Adicionalmente se le realizan descuentos relativo a un impuesto de seguridad del
 
 El sistema debe imprimir un mensaje indicando el nombre del empleado y su sueldo total.    
 
-sueldoNeto 
-sueldoBruto=cantHoras*2000
-impuesto=sueldoBruto*(10/100)
-sueldoNeto=sueldoBruto-impuesto
+sueldoNeto   
+sueldoBruto = cantHoras*2000  
+impuesto = sueldoBruto*(10/100)  
+sueldoNeto = sueldoBruto - impuesto  
 
 ### **PSEUDOCODIGO**
  
@@ -83,9 +83,9 @@ INICIO
     imprima "Ingrese cantidad de horas trabajadas";
     lea cantHoras; 
 
-    sueldoBruto=cantHoras*2000;
-    impuesto=sueldoBruto*0.10;
-    sueldoNeto=sueldoBruto-impuesto; 
+    sueldoBruto = cantHoras*2000;
+    impuesto = sueldoBruto*0.10;
+    sueldoNeto = sueldoBruto-impuesto; 
  
     imprima "El empleado " + nombre + "cobrará un sueldo de: " + sueldoNeto; 
     
