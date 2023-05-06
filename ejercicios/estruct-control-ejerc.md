@@ -30,7 +30,7 @@ Luego que imprima el sueldo total.
 Cada hora extra vale $3000.  
 
 
-sueldoBase = 100.000 
+sueldoBase = 100.000   
 cantHorasExt = 2 
 
 totalExtras = cantHorasExt * 3000 
