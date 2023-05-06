@@ -20,14 +20,14 @@ Permite ejecutar 1 acción cuando se cumple 1 condición.
         }  
 ```
  
- *Se muestra lo que está dentro del bloque de las {}, si la condición es V*
+ *Se muestra lo que está dentro del bloque de las { }, si la condición es V*
 
 ## CONDICIONES DOBLES (IF-ELSE) 
 
 Permiten ejecutar determinada acción cuando se cumple una condición, pero en caso que la condición no se cumpla, ejecuta otro camino con acciones diferentes. 
  
  Condición = TRUE ==> Ejecuta acciones dentro del **if**  
- Condición = FALSE ==> Ejecuta accionesd entro del **else**
+ Condición = FALSE ==> Ejecuta acciones dentro del **else**
 
 ```  
  if (condición)  
